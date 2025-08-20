@@ -1,0 +1,29 @@
+
+:root { --bg-color: #f0f8ff; --text-color: #2c3e50; --accent-color: #3b6b74; --section-bg: #e8f0f2; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height:1.6; overflow-x:hidden; scroll-behavior:smooth; }
+header h1 { font-weight:700; font-size:2.5rem; margin-bottom:0.5rem;}
+header { background-color: var(--accent-color); color:white; padding:2rem 1rem; text-align:center; position:sticky; top:0; z-index:1000;}
+nav { margin-top:1rem; }
+nav a { margin:0 15px; text-decoration:none; color:white; font-weight:600; transition: color 0.3s ease, transform 0.3s ease; display:inline-block; }
+nav a:hover { color:#a2d2c9; transform:translateY(-3px); }
+main { padding:2rem; max-width:900px; margin:0 auto; }
+section { margin-bottom:2rem; padding:1.5rem 2rem; background-color: var(--section-bg); border-radius:8px; }
+h2 { margin-bottom:1rem; color: var(--accent-color); font-weight:700; font-size:1.8rem; }
+ul { list-style-type:none; padding-left:0; }
+ul li { margin-bottom:0.5rem; }
+footer { text-align:center; padding:1rem; background-color: var(--accent-color); color:white; margin-top:2rem; font-weight:600; }
+@media(max-width:600px){nav a{display:block;margin:10px 0;}}
+section img { width:60%; height:auto; display:block; margin:0 auto 1rem auto; border-radius:5px; }
+.sobremim-gallery, .interesses-gallery { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:1rem; }
+.sobremim-gallery img, .interesses-gallery img { width:30%; height:auto; border-radius:5px; }
+#habilidades ul li { font-size:1.1rem; font-weight:500; padding-left:1.8rem; position:relative; }
+#habilidades ul li::before { position:absolute; left:0; top:0; }
+#habilidades ul li:nth-child(1)::before { content:"💻"; }
+#habilidades ul li:nth-child(2)::before { content:"🌍"; }
+#habilidades ul li:nth-child(1) { color:#27ae60; }
+#habilidades ul li:nth-child(2) { color:#2980b9; }
+form input, form textarea { padding:0.5rem; border-radius:5px; border:1px solid #ccc; width:100%; box-sizing:border-box; }
+form button { padding:0.7rem; border:none; border-radius:5px; background-color:#3b6b74; color:white; font-weight:600; cursor:pointer; transition: background-color 0.3s; }
+form button:hover { background-color:#276a6f; }
+form { margin-top:1rem; display:flex; flex-direction:column; gap:0.5rem; }
