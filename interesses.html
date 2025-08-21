@@ -6,6 +6,64 @@
   <title>Andre Dutra - Interesses</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
+  <style>
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  color: #000;       
+}
+
+.i-aviao,
+.i-familia,
+.i-livro,
+.i-ingles {
+  background: #f0f8ff;
+}
+
+
+.interesses-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.interesses-gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.interesses-gallery img {
+  width: 50%;  
+  max-width: none;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.interesses-gallery figcaption {
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .interesses-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+  </style>
 </head>
 <body>
 <header>
@@ -15,6 +73,7 @@
     <a href="interesses.html">Interesses</a>
     <a href="sobremim.html">Sobre Mim</a>
     <a href="habilidades.html">Habilidades</a>
+    <a href="projetos.html">Projetos</a>
     <a href="contato.html">Contato</a>
   </nav>
 </header>
@@ -22,16 +81,21 @@
 <main>
   
 <section>
-  <h2>Interesses</h2>
   <ul>
-    <li>Viagem</li>
-    <li>Família</li>
-    <li>Estudos</li>
-    <li>Inglês</li>
+    <li class="i-aviao">✈️ Mais de 20 países visitados e com ambição de conhecer o mundo inteiro, além de novas culturas.</li>
+    <li class="i-familia">👨‍👩‍👧‍👦 Passar o tempo com a minha família é uma das coisas mais importantes para mim, fazendo diversas atividades nos fins de semana reunidos.</li>
+    <li class="i-livro">📚 Interesse em aprender coisas novas de diferentes seções, assim como história, tecnologia, IA...</li>
+    <li class="i-ingles">Inglês: apaixonado pela língua inglesa com interesse em aprender cada vez mais sobre, com palavras novas, assim criando mais fluência.</li>
   </ul>
   <div class="interesses-gallery">
-    <img src="https://lh3.googleusercontent.com/d/1Q2m-ehMGMmABj3X4clqHi_JY8JvV9h7B" alt="Imagem 1 - Interesses">
-    <img src="https://lh3.googleusercontent.com/d/1EAJIpmLku_R4wJWJSdLEhzTZMFUT2BfI" alt="Imagem 2 - Interesses">
+    <figure>
+      <img src="https://lh3.googleusercontent.com/d/1Q2m-ehMGMmABj3X4clqHi_JY8JvV9h7B" alt="Paisagem nevada em Big White, Kelowna">
+      <figcaption>Big White, Kelowna</figcaption>
+    </figure>
+    <figure>
+      <img src="https://lh3.googleusercontent.com/d/1EAJIpmLku_R4wJWJSdLEhzTZMFUT2BfI" alt="Vista do Lake Louise, Alberta">
+      <figcaption>Lake Louise, Alberta</figcaption>
+    </figure>
   </div>
 </section>
 
